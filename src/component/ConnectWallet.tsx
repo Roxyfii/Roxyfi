@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
 import type { MetaMaskInpageProvider } from '@metamask/providers';
-import '../styles/connect.module.css';
+import styles from '../styles/connect.module.css'; // Import dengan nama styles
 
 declare global {
   interface Window {
@@ -83,19 +83,10 @@ const ConnectWallet: React.FC = () => {
   }, []);
 
   return (
-    <div className="wallet-container">
-      <h2 className="wallet-title">Wallet</h2>
-      <button
-        onClick={connectWallet}
-        className={`wallet-button ${walletAddress ? 'connected' : ''}`}
-      >
-        {walletAddress ? 'Connected' : 'Connect Wallet'}
+    <div className={styles.walletContainer}>
+      <button onClick={connectWallet} className={styles.walletButton}>
+        {walletAddress ? shortenAddress(walletAddress) : 'Connect • Polygon'}
       </button>
-      {walletAddress && (
-        <div className="wallet-info">
-          <p className="wallet-address">{shortenAddress(walletAddress)}</p>
-        </div>
-      )}
     </div>
   );
 };

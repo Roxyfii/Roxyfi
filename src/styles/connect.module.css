@@ -9,6 +9,7 @@
   color: white;
   font-size: 0.875rem; /* Ukuran font yang lebih kecil */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999999;
 }
 
 /* Tombol koneksi */
