@@ -1,16 +1,35 @@
 /* src/styles/custom.css */
 /* src/styles/custom.css */
-body {
-    /* Menambahkan gambar bintang dengan animasi bergerak */
-    background-image: url('/images/galaxy.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Agar gambar tetap saat scroll */
-    animation: moveBackground 100s linear infinite;
-    height: 100vh; /* Pastikan body menutupi seluruh layar */
-    margin: 0;
+/* styles/globals.css */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url('/images/galaxy.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  animation: moveBackground 100s linear infinite;
+  overflow-x: hidden;
+}
+
+/* Animasi gerakan background */
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
   }
-  
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Pastikan elemen root juga tidak menimpa background */
+#__next, main, .app-container {
+  background: transparent;
+  height: 100%;
+}
+
   /* Efek bergerak pada latar belakang */
   @keyframes moveBackground {
     0% {

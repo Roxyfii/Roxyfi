@@ -5,6 +5,7 @@ import poolsData from "../data/pools.json";
 import styles from "@/styles/PoolList.module.css";
 import ConnectWallet from '../component/ConnectWallet';
 
+
 export default function Home() {
   const [pools, setPools] = useState(poolsData);
 
