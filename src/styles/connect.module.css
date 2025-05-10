@@ -1,0 +1,43 @@
+/* Container utama */
+.walletContainer {
+  background-color: #2d2d2d; /* Warna latar belakang gelap */
+  padding: 0.5rem;
+  border-radius: 8px;
+  max-width: 240px;
+  margin: 20px auto;
+  text-align: center;
+  color: white;
+  font-size: 0.875rem; /* Ukuran font yang lebih kecil */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Tombol koneksi */
+.walletButton {
+  background-color: #8247e5;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem; /* Ukuran font tombol lebih kecil */
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+.walletButton:hover {
+  background-color: #6b38cc;
+  transform: scale(1.05); /* Efek zoom pada hover */
+}
+
+.walletButton.connected {
+  background-color: #28a745; /* Warna hijau ketika sudah terhubung */
+}
+
+/* Label jaringan kecil */
+.networkLabel {
+  font-size: 0.6rem; /* Ukuran font kecil */
+  color: #ccc;
+  margin-top: 4px;
+  display: block;
+}

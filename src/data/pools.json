@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Coin A",
+    "amount": 1000,
+    "apr": 12,
+    "status": "active",
+    "logo": "IDRX.png",
+    "userStake": 0,
+    "rewardToken": 0,
+    "contractAddress": "0xb13e7257ACFCF8BFCE806f429507d93fF4EF6277"
+  }
+
+]

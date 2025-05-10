@@ -1,0 +1,89 @@
+/* src/styles/custom.css */
+/* src/styles/custom.css */
+body {
+    /* Menambahkan gambar bintang dengan animasi bergerak */
+    background-image: url('/images/galaxy.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Agar gambar tetap saat scroll */
+    animation: moveBackground 100s linear infinite;
+    height: 100vh; /* Pastikan body menutupi seluruh layar */
+    margin: 0;
+  }
+  
+  /* Efek bergerak pada latar belakang */
+  @keyframes moveBackground {
+    0% {
+      background-position: 20% 0;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+  
+  /* src/styles/custom.css */
+.pool-card img {
+    border-radius: 50%; /* Membuat logo menjadi lingkaran */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .pool-card img:hover {
+    transform: scale(1.1); /* Membesarkan gambar logo saat hover */
+  }
+  
+  
+.pool-card {
+    background-color: rgba(82, 82, 82, 0.555);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(104, 104, 104, 0.1);
+    width: 100%;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .pool-card:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .pool-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .pool-info {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  
+  .pool-status-active {
+    background-color: #34d399;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+  
+  .pool-status-inactive {
+    background-color: #e5e5e5;
+    color: #4d4d4d;
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+  
+  .pool-btn {
+    background-color: #8b5cf6;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .pool-btn:hover {
+    background-color: #7c3aed;
+  }
+  
+  .pool-btn:disabled {
+    background-color: #b8b8b8;
+    cursor: not-allowed;
+  }
