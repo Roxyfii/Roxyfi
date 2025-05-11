@@ -2,11 +2,13 @@
     background-color: #1a1a1a;
     color: white;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 0.5rem;
     position: fixed;
     bottom: 0;
     width: 100%;
     font-size: 0.875rem;
+    margin: 0 100px;
+    z-index: 999999;
   }
   
   .footer a {

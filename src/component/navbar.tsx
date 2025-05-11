@@ -7,6 +7,7 @@ import styles from '@/styles/Navbar.module.css';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Toggle menu open/close
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -26,12 +27,15 @@ const Navbar = () => {
 
       {/* Nav Links */}
       <div className={`${styles.navLinks} ${isMenuOpen ? styles.active : ''}`}>
+        {/* Close Button */}
+        <button className={styles.closeBtn} onClick={toggleMenu}>✕</button>
+
         <Link href="/pools">Pools</Link>
-        <Link href="/">nft</Link>
+        <Link href="/">NFT</Link>
         <Link href="/">Farms</Link>
         <Link href="/">Swap</Link>
         <Link href="/">Add Liquidity</Link>
-        
+
         {/* Connect Wallet button in the Navbar */}
         <div className={styles.connectButton}>
           <ConnectWallet />

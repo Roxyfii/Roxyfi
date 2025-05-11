@@ -8,7 +8,7 @@ const Footer = () => {
       <p>
         Built with ❤️ by{' '}
         <a href="https://yourwebsite.com" target="_blank" rel="noopener noreferrer">
-          Your Company
+          RoxyTeam
         </a>
       </p>
     </footer>
