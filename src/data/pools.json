@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "name": "Coin A",
+    "name": "STAKE ROXYFI EARN IDRX",
     "amount": 1000,
-    "apr": 12,
+    "apr": 7.5,
     "status": "active",
     "logo": "IDRX.png",
     "userStake": 0,

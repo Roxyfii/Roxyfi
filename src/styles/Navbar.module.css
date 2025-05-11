@@ -1,0 +1,99 @@
+/* Basic navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    width: 100%;
+    padding: 1rem 2rem;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 100px;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00c27e;
+    margin-right: 1rem;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  
+  .navLinks a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .navLinks a:hover {
+    color: #00c27e;
+  }
+  
+  /* Connect Wallet Button */
+  .connectButton {
+    margin-left: 2rem; /* Adds space between the wallet button and other links */
+  }
+  
+  /* Hamburger menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25px;
+    width: 50px;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .navLinks {
+      position: absolute;
+      top: 80px;
+      right: -55px;
+      background-color: #1a1a1a;
+      width: 250px;
+      height: calc(100vh - 80px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      
+    }
+  
+    .navLinks.active {
+      transform: translateX(0);
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  
+    .navLinks a {
+      font-size: 1.25rem;
+      text-align: center;
+    }
+  
+    .connectButton {
+      margin-top: 2rem;
+    }
+  }
+  

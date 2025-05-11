@@ -1,33 +1,23 @@
-// src/pages/index.tsx
-import { useEffect, useState } from "react";
-import PoolList from "../component/poolList";
-import poolsData from "../data/pools.json";
-import styles from "@/styles/PoolList.module.css";
+'use client';
+import Link from 'next/link';
+import styles from '@/styles/LandingPage.module.css';
 import ConnectWallet from '../component/ConnectWallet';
+import Navbar from '../component/navbar';
 
 
 export default function Home() {
-  const [pools, setPools] = useState(poolsData);
-
-  useEffect(() => {
-    // Simulasi fetch data
-    setPools(poolsData);
-  }, []);
-
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
-      
-      <div className={styles.bungkus}>
-      
-      <div className={styles.judul}>
-      <h1 >🔮 ROXYFI STAKE APP</h1>
+    <div className={styles.container}>
+      <Navbar/>
+    
+      <div className={styles.content}>
+        <h2 className={styles.title}>Selamat Datang di RoxyFi</h2>
+        <p className={styles.subtitle}>
+          Platform DeFi untuk staking, farming, dan swapping token di jaringan Polygon.
+        </p>
+
+       
       </div>
-      <div className={styles.connet} >
-      <ConnectWallet/>
-      </div>
-      </div>
-      
-      <PoolList pools={pools} />
     </div>
   );
 }
