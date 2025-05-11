@@ -1,7 +1,7 @@
 'use client';
-import Link from 'next/link';
+
 import styles from '@/styles/LandingPage.module.css';
-import ConnectWallet from '../component/ConnectWallet';
+
 import Navbar from '../component/navbar';
 
 

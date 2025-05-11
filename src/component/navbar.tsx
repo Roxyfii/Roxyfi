@@ -28,9 +28,9 @@ const Navbar = () => {
       <div className={`${styles.navLinks} ${isMenuOpen ? styles.active : ''}`}>
         <Link href="/pools">Pools</Link>
         <Link href="/">nft</Link>
-        <Link href="/farms">Farms</Link>
-        <Link href="/swap">Swap</Link>
-        <Link href="/add-liquidity">Add Liquidity</Link>
+        <Link href="/">Farms</Link>
+        <Link href="/">Swap</Link>
+        <Link href="/">Add Liquidity</Link>
         
         {/* Connect Wallet button in the Navbar */}
         <div className={styles.connectButton}>
