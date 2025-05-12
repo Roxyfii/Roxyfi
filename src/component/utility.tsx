@@ -17,7 +17,7 @@ export default function Utility() {
         {/* Gambar atau GIF */}
         <div className="rounded-2xl overflow-hidden shadow-[0_0_40px_#7f5af0] mb-12">
           <Image
-            src="/assets/utility-contract-demo.gif" // ganti sesuai lokasi file
+            src="/images/arti.gif" // ganti sesuai lokasi file
             alt="Utility Contract Flow"
             width={1200}
             height={600}

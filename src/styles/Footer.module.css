@@ -1,23 +1,67 @@
 .footer {
-    background-color: #1a1a1a;
-    color: white;
-    text-align: center;
-    padding: 0.5rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 0.875rem;
-    margin: 0 100px;
-    z-index: 999999;
-  }
-  
-  .footer a {
-    color: #00c27e;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .footer a:hover {
-    color: #00a66c;
-  }
-  
+  width: 100vw;
+  margin-top: 100px;
+  background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+  color: #e0e0ff;
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+z-index: 999999;
+  border-top: 1px solid #2e2e4d;
+  box-sizing: border-box;
+}
+
+.footer a {
+  color: #d194f5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  z-index: 999999;
+}
+
+.footer a:hover {
+  color: #00ffd0;
+}
+
+.footerContent {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  z-index: 999999;
+}
+
+.section {
+  flex: 1;
+  min-width: 200px;
+  z-index: 999999;
+}
+
+.section h4 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section li {
+  margin-bottom: 0.5rem;
+}
+
+.bottomNote {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #a0a0c0;
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid #333355;
+  padding-top: 1rem;
+  z-index: 999999;
+}

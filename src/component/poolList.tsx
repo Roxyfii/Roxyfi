@@ -184,9 +184,29 @@ const PoolList: React.FC<PoolListProps> = ({ pools }) => {
           </div>
 
           <div className={styles.stakeButtons}>
-            <button onClick={() => handleStake(pool)} className={styles.stakeButton}>Stake</button>
-            <button onClick={() => handleUnstake(pool)} className={styles.unstakeButton}>Unstake</button>
-            <button onClick={() => handleHarvest(pool)} className={styles.harvestButton}>Harvest</button>
+          <button
+             onClick={() => handleStake(pool)}
+             className={`${styles.stakeButton} ${pool.status === 'inactive' ? styles.inactiveButton : ''} `}
+             disabled={pool.status === 'inactive'}>
+             Stake
+          </button>
+
+          <button
+  onClick={() => handleUnstake(pool)}
+  className={`${styles.unstakeButton} ${pool.status === 'inactive' ? styles.inactiveButton : ''}`}
+  disabled={pool.status === 'inactive'}
+>
+  Unstake
+</button>
+
+<button
+  onClick={() => handleHarvest(pool)}
+  className={`${styles.harvestButton} ${pool.status === 'inactive' ? styles.inactiveButton : ''}`}
+  disabled={pool.status === 'inactive'}
+>
+  Harvest
+</button>
+
           </div>
         </div>
       ))}

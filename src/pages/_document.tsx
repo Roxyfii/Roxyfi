@@ -8,7 +8,7 @@ export default function Document() {
         <title>Roxyfi</title>
 
         {/* Mengubah favicon */}
-        <link rel="icon" href="/public/images/11zon_cropped (1).png" />
+        <link rel="icon" type='images' href="/images/roxyfi.png" />
         
         {/* Preconnect untuk meningkatkan kecepatan memuat font */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />

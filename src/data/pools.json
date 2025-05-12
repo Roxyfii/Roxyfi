@@ -5,10 +5,21 @@
     "amount": 1000,
     "apr": 7.5,
     "status": "active",
-    "logo": "IDRX.png",
+    "logo": "roxyfi.png",
     "userStake": 0,
     "rewardToken": 0,
     "contractAddress": "0xb13e7257ACFCF8BFCE806f429507d93fF4EF6277"
+  },
+  {
+    "id": 2,
+    "name": "STAKE ROXYFI EARN IDRX",
+    "amount": 1000,
+    "apr": 7.5,
+    "status": "inactive",
+    "logo": "roxyfi.png",
+    "userStake": 0,
+    "rewardToken": 0,
+    "contractAddress": "0xb13e7257ACFCF8BFCE806f429507d93fF4EF62707"
   }
 
 ]

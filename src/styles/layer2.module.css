@@ -1,0 +1,26 @@
+
+.layer2 {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/1212.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    animation: moveBackground 100s linear infinite;
+    overflow-x: hidden;
+    z-index: 0;
+  }
+  
+  .layer2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.562); /* ubah 0.5 jadi lebih besar untuk lebih gelap */
+    z-index: -9;
+    pointer-events: none;
+  }

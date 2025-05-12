@@ -2,8 +2,9 @@
 import { useEffect, useState } from "react";
 import PoolList from "../../component/poolList";
 import poolsData from "../../data/pools.json";
-import styles from "@/styles/PoolList.module.css";
-import ConnectWallet from '../../component/ConnectWallet';
+import Navbar from "@/component/navbar";
+import Footer from "@/component/footer";
+import styles from '@/styles/layer2.module.css'
 
 export default function Home() {
   const [pools, setPools] = useState(poolsData);
@@ -14,19 +15,20 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
-      
-      <div className={styles.bungkus}>
-      
-      <div className={styles.judul}>
-      <h1 >🔮 ROXYFI STAKE APP</h1>
-      </div>
-      <div className={styles.connet} >
-      <ConnectWallet/>
-      </div>
-      </div>
-      
+    <div className={styles.layer2}>
+      <Navbar/>
       <PoolList pools={pools} />
+      <div>
+      <img
+            src="/images/wizard.png" // ganti sesuai lokasi file
+            alt="Utility Contract Flow"
+            width={100}
+            height={100}
+            className="w-full h-auto"
+          />
+      </div>
+      <Footer/>
+      
     </div>
   );
 }

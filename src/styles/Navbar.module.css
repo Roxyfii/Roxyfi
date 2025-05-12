@@ -39,9 +39,6 @@
 }
 
 /* Connect Wallet Button */
-.connectButton {
-  margin-left: 2rem;
-}
 
 /* Hamburger Menu */
 .hamburger {
@@ -78,7 +75,7 @@
 @media screen and (max-width: 768px) {
   .navLinks {
     position: absolute;
-    top: -65px;
+    top: -45px;
     left: 0;
     background-color: #1a1a1a;
     width: 100%;
@@ -113,6 +110,7 @@
   /* Tampilkan tombol close hanya di mode mobile saat menu aktif */
   .closeBtn {
     display: block;
+    margin-top: 70px;
     z-index: 99999;
   }
 }

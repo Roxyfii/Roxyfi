@@ -1,0 +1,38 @@
+[
+    {
+      "symbol": "ROXYFI",
+      "name": "Roxyfi Token",
+      "address": "0xYourTokenAddress1",
+      "decimals": 18,
+      "balance": 1000
+    },
+    {
+      "symbol": "WPOL",
+      "name": "Polygon Token",
+      "address": "0xYourTokenAddress1",
+      "decimals": 18,
+      "balance": 1000
+    },
+    {
+      "symbol": "IDRT",
+      "name": "Rupiah Token",
+      "address": "0xYourTokenAddress1",
+      "decimals": 18,
+      "balance": 1000
+    },
+    {
+      "symbol": "USDT",
+      "name": "Theter Token",
+      "address": "0xYourTokenAddress1",
+      "decimals": 18,
+      "balance": 1000
+    },
+    {
+      "symbol": "IDRX",
+      "name": "Idrx Coin",
+      "address": "0xYourTokenAddress2",
+      "decimals": 0,
+      "balance" : 1000
+    }
+  ]
+  

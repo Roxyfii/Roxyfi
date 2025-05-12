@@ -30,10 +30,11 @@ const Navbar = () => {
         {/* Close Button */}
         <button className={styles.closeBtn} onClick={toggleMenu}>✕</button>
 
-        <Link href="/pools">Pools</Link>
+        <Link href="/">Home</Link>
+        <Link href="/pools">Staking</Link>
         <Link href="/">NFT</Link>
         <Link href="/">Farms</Link>
-        <Link href="/">Swap</Link>
+        <Link href="/swap">Swap</Link>
         <Link href="/">Add Liquidity</Link>
 
         {/* Connect Wallet button in the Navbar */}

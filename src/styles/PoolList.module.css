@@ -3,6 +3,8 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;
   padding: 20px;
+  align-items: center;
+  z-index: 99999000;
 }
 
 .poolCard {
@@ -54,8 +56,14 @@
 }
 
 .inactive {
-  background-color: gray;
+  background-color: rgb(255, 0, 0);
 }
+.inactiveButton {
+  background-color: #555 !important;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
 
 .poolDetails {
   font-size: 0.95rem;
